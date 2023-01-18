@@ -1,0 +1,130 @@
+#confirmemail-container {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 576px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .confirmEmail-content {
+    width: 576px;
+    height: 450px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    text-align: center;
+    margin-top: 30px;
+
+    .confirmEmail-img-container {
+      width: 148px;
+      height: 88px;
+      margin-top: 43px;
+
+      .confirmEmail-img-gmail {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+    .confirmEmail-verify-email {
+      width: 408px;
+      height: 32px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 32px;
+      text-align: center;
+      color: var(--text-color-black);
+    }
+    .confirmEmail-verify-content {
+      width: 408px;
+      height: 40px;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: var(--text-color-black);
+      span {
+        font-weight: 800;
+      }
+    }
+    .confirmEmail-verify-action {
+      width: 408px;
+      height: 40px;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: var(--text-color-default);
+      span {
+        font-weight: 800;
+      }
+    }
+    .confirmEmail-verify-mention {
+      width: 408px;
+      height: 20px;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: var(--text-color-default);
+    }
+    .confirmEmail-btn {
+      width: 142px;
+      height: 42px;
+      background: #2e75b7;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .confirmEmail-btn-count {
+      width: 142px;
+      height: 42px;
+      background: #d5eeff;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #134bbc;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .confrimEmail-help {
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: var(--text-color-default);
+      span {
+        color: #2e75b7;
+        cursor: pointer;
+      }
+    }
+  }
+}

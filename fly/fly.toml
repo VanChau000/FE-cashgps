@@ -1,0 +1,54 @@
+# fly.toml file generated for cashgps on 2022-10-07T10:20:37+07:00
+
+app = "cashgps"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[env]
+  REACT_APP_CLIENT_HOST = "https://cashgps-staging.fly.dev/"
+  REACT_APP_CLIENT_URL = "https://cashgps.fly.dev/"
+  REACT_APP_API_KEY = "AIzaSyDEPJs9L3SdOy0g-1_3snejgN_1g1ZUsBA"
+  REACT_APP_CLIENT_ID = "197442332697-jatnibe9eo3plq7h1s3bocl8jlu7bldg.apps.googleusercontent.com"
+  REACT_APP_SCOPE = "https://www.googleapis.com/auth/drive.metadata.readonly"
+  REACT_APP_DISCOVERY_DOCS = "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"
+  DANGEROUSLY_DISABLE_HOST_CHECK = "true"
+  REACT_APP_FIREBASE_APIKEY = "AIzaSyBVqcLst50j3GIa_Z9RoDaAVmcElbl-rak"
+  REACT_APP_FIREBASE_AUTHDOMAIN = "cashgps-ducchau.firebaseapp.com"
+  REACT_APP_FIREBASE_PROJECTID = "cashgps-ducchau"
+  REACT_APP_FIREBASE_STORAGEBUCKET = "cashgps-ducchau.appspot.com"
+  REACT_APP_FIREBASE_MESSAGING_SENDERID = "900760140363"
+  REACT_APP_FIREBASE_APPID = "1:900760140363:web:c8c0b52b4f443f1d0cabce"
+  REACT_APP_FIREBASE_MEASUREMENID = "G-LWDZ0XQWF3"
+  REACT_APP_PUBLIC_SRTIPE_KEY = "pk_test_51M4zYZCxwaFqJ7ikeAf4IPGbmmnzFGoZSXR8ZDdABR7ohdH56ixibWVNhgMia8zU21nZ30hKQl26xkPYLm2pWG7e00wfpSofzp"
+  REACT_APP_GG_SITE_KEY = "6LdWI5cjAAAAAHva2hzb8CUi1NuUkQKDiKNuolHD"
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
+[[services]]
+  http_checks = []
+  internal_port = 3000
+  processes = ["app"]
+  protocol = "tcp"
+  script_checks = []
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+    type = "connections"
+
+  [[services.ports]]
+    force_https = true
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [[services.tcp_checks]]
+    grace_period = "1s"
+    interval = "15s"
+    restart_limit = 0
+    timeout = "2s"

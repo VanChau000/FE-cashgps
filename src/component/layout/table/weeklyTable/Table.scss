@@ -1,0 +1,100 @@
+.showHide {
+  display: none;
+}
+
+.loading-data {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin-top: 65px;
+}
+
+.bg-grey {
+  background-color: #f6f6f7 !important;
+  cursor: default !important;
+  color: var(--text-color-default) !important;
+}
+.bg-grey:hover{
+  background-color: white !important;
+}
+
+.td-estimated-tran {
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: right;
+  color: #8C9196;
+  bottom: 0;
+  right: 7px;
+}
+
+.percent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border: hidden !important;
+}
+
+.percent>img {
+  width: 10px !important;
+  height: auto !important;
+  margin-right: 0px !important;
+}
+
+.td-percen-tran-red {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: right;
+  color: #DB2525;
+}
+
+.td-percen-tran-blue {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: right;
+  color: green;
+}
+
+.img-td-percen-tran-red {
+  width: 12px !important;
+  height: 6px !important;
+}
+
+.img-td-percen-tran-blue {
+  width: 12px !important;
+  height: 6px !important;
+}
+
+.bg-white-hover :hover {
+  // border: 1px solid #2E75B7 !important;
+  background-color: #E8F7FF !important;
+}
+
+@media only screen and (max-width: 970px) {
+  #table-data-container {
+    .thead-table {
+      tr td:first-child {
+        span {
+          width: 100px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

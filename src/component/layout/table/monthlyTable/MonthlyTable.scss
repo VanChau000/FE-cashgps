@@ -1,0 +1,263 @@
+.wrap-table {
+  margin-top: 66px;
+  padding-top: 16px;
+  padding-right: 25px;
+  width: 100%;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.table-container img {
+  width: 24px;
+  height: 24px;
+}
+
+.table-container>tbody>tr td {
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+
+.table-container>tbody>tr td:hover {
+  background-color: #E8F7FF;
+}
+
+.bg-grey:hover {
+  background-color: #f6f6f7 !important;
+}
+
+.table-container>tbody>tr td:first-child {
+  border: hidden;
+  padding-right: 20px;
+  width: 21%;
+}
+
+.table-container>tbody>tr td:first-child:hover {
+  background-color: white !important;
+  cursor: default !important;
+}
+
+.table-container>tbody>tr td:last-child {
+  border-right: hidden;
+}
+
+.table-container tbody tr td>div {
+  border: 1px solid #ddd;
+}
+
+.table-container tbody tr td>div:first-child {
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  padding-left: 20px;
+  cursor: default !important;
+}
+
+.table-container tbody tr td div {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  align-items: center;
+
+  padding-right: 4px;
+  border-bottom: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+}
+
+.table-container tbody tr td div>img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.table-container tbody tr td div>img~img {
+  width: 16px;
+  height: 16px;
+}
+
+.thead-table tr td:first-child {
+  padding-right: 20px;
+  padding-left: 12px;
+  min-width: 275px;
+
+}
+
+.thead-table tr td:first-child>div {
+  padding: 13px 12px
+}
+
+.monthly-balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.monthly-balance>div:first-child {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.monthly-balance>div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.monthly-balance>div:nth-child(2)>img {
+  height: 14px;
+  width: 16px;
+  margin-left: 6px;
+}
+
+.monthly-start-balance {
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+.sub-category {
+  padding-left: 48px !important;
+}
+
+.thead-cash-content>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+}
+
+.thead-cash-content>div>span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.thead-cash-content>div>p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.current-day-color {
+  color: var(--text-color-primary) !important;
+}
+
+.space-line-16 {
+  width: 100%;
+  height: 16px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-400 {
+  font-weight: 400 !important;
+}
+
+.netGain {
+  color: var(--palette-tran-blue);
+  font-weight: 700 !important;
+}
+
+.netLoss {
+  font-weight: 700 !important;
+  color: var(--palette-tran-red);
+}
+
+.text-title-category {
+  color: var(--text-color-primary);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.text-color-cash-position {
+  color: var(--text-color-black)
+}
+
+.text-color-default {
+  color: var(--text-color-default);
+}
+
+.cash-position {
+  border-bottom: 1px solid #ddd !important;
+}
+
+.total-cash {
+  border-bottom: 1px solid #ddd !important;
+  color: var(--text-color-primary);
+  cursor: default !important;
+}
+
+.cash-title {
+  border: hidden;
+  background-color: var(--bg-color-primary);
+  color: white;
+}
+
+.total-cash-in {
+  color: var(--text-color-cashIn);
+  background-color: rgba(10, 157, 33, 0.05);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px !important;
+  line-height: 24px;
+}
+
+.total-cash-out {
+  color: var(--text-color-cashOut);
+  background-color: rgba(219, 37, 37, 0.05);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px !important;
+  line-height: 24px;
+}
+
+.total-balance {
+  border-radius: 8px;
+  background-color: #F6F6F7;
+}
+
+.color-bg-grey {
+  color: #F6F6F7 !important;
+}
+
+.blance-total {
+  padding: 0px 8px;
+}
+
+.date-format>span {
+  color: var(--text-color-dateFormat);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.total-tbody-first-td:hover {
+  cursor: default !important;
+}
+
+.toggle-show-hide-img{
+  cursor: default !important;
+}

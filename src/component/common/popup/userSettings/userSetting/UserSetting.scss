@@ -1,0 +1,53 @@
+.wrap-pop-userSetting{
+  transition: all 1s ease-out;
+  position: fixed;
+  top: 64px;
+  right: 20px;
+  width: 190px;
+  height: auto;
+  z-index: 99;
+}
+.pop-userSetting{
+  align-items:flex-start;
+  background-color: #FFFFFF;
+  width: fit-content;
+  height: auto;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  width: 190px;
+  height: auto;
+
+}
+.pop-userSetting > div:first-child > div{
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  img{
+    margin-right: 16px;
+  }
+  p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.user-profile{
+  margin-bottom: 24px;
+}
+.user-billing{
+  margin-bottom: 24px;
+}
+.pop-userSetting > div:first-child{
+  border-bottom: 1px solid #F0F0F0;
+  padding: 16px;
+}
+.version{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C9196;
+}

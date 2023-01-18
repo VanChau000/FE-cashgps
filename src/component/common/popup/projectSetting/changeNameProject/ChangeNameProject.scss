@@ -1,0 +1,132 @@
+#changeNameProject-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1023px;
+  background: var(--bg-color-dialog);
+  z-index: 99;
+  overflow: hidden;
+
+  .changeNameProject-content {
+    position: absolute;
+    width: 420px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px -3px rgba(23, 24, 24, 0.08),
+      0px 8px 20px -4px rgba(23, 24, 24, 0.12);
+    border-radius: 8px;
+
+    .changeNameProject-header {
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid #e4e4e4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px 14px 16px;
+
+      h4 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--text-color-default);
+      }
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .changeNameProject-main {
+      padding: 16px 16px 24px 16px;
+
+      .changeNameProject-input {
+        h4 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: var(--text-color-default);
+        }
+
+        .inputText-changeName {
+          position: relative;
+          margin-top: 4px;
+          input {
+            width: 388px;
+            height: 42px;
+            background: #ffffff;
+            border: 1px solid #babfc3;
+            border-radius: 8px;
+            padding-left: 12px;
+            margin-top: 3px;
+          }
+
+          span {
+            position: absolute;
+            top: 13px;
+            right: 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #8c9196;
+          }
+        }
+      }
+
+      .changeNameProject-btn-save {
+        width: 94px;
+        height: 38px;
+        left: 310px;
+        top: 156px;
+        background: #edeeef;
+        border-radius: 8px;
+        margin-top: 24px;
+        border: none;
+        margin-left: 292px;
+        cursor: pointer;
+        color: #6d7175;
+      }
+
+      .changeNameProject-btn-save-active {
+        width: 94px;
+        height: 38px;
+        left: 310px;
+        top: 156px;
+        background: var(--bg-color-primary);
+        border-radius: 8px;
+        margin-top: 24px;
+        border: none;
+        margin-left: 292px;
+        cursor: pointer;
+        color: #ffffff;
+      }
+      .changeNameProject-btn-save-active:hover{
+       background-color: var(--text-color-currency-subcription);
+      }
+    }
+  }
+
+  @keyframes shake {
+    0% {
+      margin-left: 0rem;
+    }
+    25% {
+      margin-left: 0.5rem;
+    }
+    75% {
+      margin-left: -0.5rem;
+    }
+    100% {
+      margin-left: 0rem;
+    }
+  }
+}

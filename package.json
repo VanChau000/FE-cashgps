@@ -1,0 +1,96 @@
+{
+  "name": "cashgps",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@apollo/react-testing": "^4.0.0",
+    "@stripe/react-stripe-js": "^1.15.0",
+    "@stripe/stripe-js": "^1.44.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/uuid": "^8.3.4",
+    "axios": "^0.27.2",
+    "current-week-number": "^1.0.7",
+    "dayjs": "^1.11.6",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.2",
+    "firebase": "^9.14.0",
+    "graphql": "^16.5.0",
+    "graphql-request": "^5.1.0",
+    "husky": "^8.0.1",
+    "jwt-decode": "^3.1.2",
+    "lint-staged": "^13.0.3",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-avatar": "^5.0.3",
+    "react-currency-input-field": "^3.6.8",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-ripples": "^2.2.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-test-renderer": "^18.2.0",
+    "react-toastify": "^9.1.1",
+    "sass": "^1.53.0",
+    "source-map-explorer": "^2.5.3",
+    "stripe": "^11.1.0",
+    "typescript": "^4.7.4",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "https://cashgps-staging.fly.dev/",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/react": "^13.4.0",
+    "@types/lodash": "^4.14.184",
+    "@types/node": "^18.6.1",
+    "@types/react-datepicker": "^4.4.2",
+    "@types/react-google-recaptcha": "^2.1.5",
+    "prettier": "2.7.1"
+  }
+}

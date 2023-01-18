@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('./asset/font/fontsfree-net-sfprotext-regular.woff') format('woff');
+  src: url('./asset/font/fontsfree-net-sfprotext-regular.woff2') format('woff2');
+}
+
+.App {
+  width: 100vw;
+  height: auto;
+  /* overflow: scroll; */
+  margin: 0 auto;
+  --text-color-primary: #2e75b7;
+  --text-color-default: #202223;
+  --text-color-helpText: #d72c0d;
+  --text-color-black: #000000;
+  --text-color-cashIn: #0A9D21;
+  --text-color-cashOut: #DB2525;
+  --text-color-dateFormat: #8C9196;
+  --text-color-currency-subcription: #3688D3;
+  --bg-color-primary: #2E75B7;
+  --bg-color-white: #f0f0f0;
+  --bg-color-error: #ffe4e4;
+  --bg-color-dialog: rgba(0, 0, 0, 0.5);
+  --bg-color-default: #E5E5E5;
+  --palette-red: #d72c0d;
+  --palette-green: #00b432;
+  --palette-yellow: #f8ab16;
+  --border-color-default: #ddd;
+  --palette-tran-red: #db2525;
+  --palette-tran-blue: #0a9d21;
+}
+input[type='email']:focus {
+  border: 0.8px solid #458fff !important;
+  box-shadow: 0px 0px 10px rgba(0, 113, 245, 0.25) !important;
+  border-radius: 8px !important;
+  outline: none;
+}
+input[type='text']:focus {
+  border: 0.8px solid #458fff;
+  box-shadow: 0px 0px 10px rgba(0, 113, 245, 0.25);
+  border-radius: 8px;
+  outline: none;
+}
+textarea:focus {
+  border: 0.8px solid #458fff !important;
+  box-shadow: 0px 0px 10px rgba(0, 113, 245, 0.25) !important;
+  border-radius: 8px !important;
+  outline: none;
+}
+input[type='number']:focus {
+  border: 0.8px solid #458fff !important;
+  box-shadow: 0px 0px 10px rgba(0, 113, 245, 0.25) !important;
+  border-radius: 8px !important;
+  outline: none;
+}
+input[type='password']:focus {
+  border: 0.8px solid #458fff !important;
+  box-shadow: 0px 0px 10px rgba(0, 113, 245, 0.25) !important;
+  border-radius: 8px !important;
+  outline: none;
+}
+.loading-fallback{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.toast-message {
+  background: darkblue !important;
+  color: #fff;
+  font-size: 20px;
+  width: auto;
+  padding: 30px 20px;
+}
